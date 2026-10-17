@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About – WebcamTest</title>
+<meta name="description" content="About WebcamTest, a free online tool to test your webcam and microphone privately in your browser.">
+<link rel="canonical" href="https://example.com/about.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m22 8-6 4 6 4V8Z'/%3E%3Crect width='14' height='12' x='2' y='6' rx='2' ry='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .doc { max-width: 720px; padding: 40px 20px 20px; }
+  .doc h1 { font-size: clamp(26px,4vw,34px); font-weight: 700; letter-spacing: -0.02em; }
+  .doc h2 { font-size: 20px; font-weight: 600; margin-top: 30px; }
+  .doc p, .doc li { color: var(--text-muted); margin-top: 10px; }
+  .doc ul { padding-left: 22px; }
+  .doc a { color: var(--accent); }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
+      <span>Webcam<strong>Test</strong></span>
+    </a>
+    <nav class="nav"><a href="index.html">Home</a><a href="privacy.html">Privacy</a></nav>
+  </div>
+</header>
+
+<main class="container doc">
+  <h1>About WebcamTest</h1>
+  <p>WebcamTest is a free online tool that lets you check whether your webcam and microphone are working &mdash; in seconds, and without installing anything. It is designed for anyone who needs to confirm their camera works before a video call, interview, livestream or online exam.</p>
+
+  <h2>Private by design</h2>
+  <p>Everything happens locally in your browser. The live video is displayed only on your screen; it is never uploaded, stored or recorded. We believe a webcam test should never ask you to send your camera feed to a server, and ours never does.</p>
+
+  <h2>What you can check</h2>
+  <ul>
+    <li>Whether your camera produces a live picture</li>
+    <li>The resolution, frame rate and aspect ratio of your camera</li>
+    <li>Whether your microphone picks up sound, using the live level meter</li>
+    <li>Multiple cameras, with a selector to switch between them</li>
+  </ul>
+
+  <h2>Works everywhere</h2>
+  <p>WebcamTest runs in all modern browsers &mdash; Chrome, Edge, Firefox, Safari and Opera &mdash; on desktop, laptop, Android and iOS. No downloads, no sign-up, no cost.</p>
+
+  <p style="margin-top:30px;"><a href="index.html">&larr; Back to the webcam test</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> WebcamTest. A free, private webcam testing tool.</p>
+    <nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="about.html">About</a></nav>
+  </div>
+</footer>
+<script>
+  (function(){var s;try{s=localStorage.getItem("wt-theme");}catch(e){}
+  if(s)document.documentElement.setAttribute("data-theme",s);
+  else if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.setAttribute("data-theme","dark");
+  var y=document.getElementById("year");if(y)y.textContent=new Date().getFullYear();})();
+</script>
+</body>
+</html>
